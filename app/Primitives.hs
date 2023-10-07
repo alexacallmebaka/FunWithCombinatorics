@@ -28,3 +28,12 @@ multinom n xs
              den <- foldl ( liftM2 (*) ) ( Just 1 ) $ map factorial xs
              quot <- return $ num `div` den
              return quot
+
+weakComp :: Integer -> Integer -> Integer
+weakComp n len = (n+len-1) `choose` (n)
+
+comp :: Integer -> Integer -> Integer
+comp n len = (n-1) `choose` (len-1)
+
+--stirNum2ndKind :: Integer -> Integer -> Integer
+--stirNum2ndKind n k = 
