@@ -20,11 +20,8 @@ maintainer:         50460460+alexacallmebaka@users.noreply.github.com
 -- category:
 extra-source-files: CHANGELOG.md
 
-executable combo
-    main-is:          Main.hs
-
-    -- Modules included in this executable, other than Main.
-    other-modules: Primitives
+library
+    exposed-modules: Primitives
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
